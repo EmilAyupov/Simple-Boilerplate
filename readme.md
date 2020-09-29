@@ -1,9 +1,7 @@
-{
-  "name": "Simple-Boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "",
-  "devDependencies": {
+# Simple-Boilerplate
+
+## devDependencies
+
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
@@ -18,8 +16,9 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
     "typescript": "^4.0.3"
-  },
-  "scripts": {
+
+## scripts
+
     "build": "babel src --extensions .js,.ts,.tsx --out-dir dist",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "check-types": "tsc",
@@ -28,8 +27,3 @@
     "check-format": "npm run prettier -- --list-different",
     "validate": "npm-run-all --parallel check-types check-format lint build",
     "test": "jest"
-  },
-  "keywords": [],
-  "author": "Emil",
-  "license": "GPLv3"
-}
